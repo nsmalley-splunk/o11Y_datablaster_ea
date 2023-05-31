@@ -1,0 +1,33 @@
+global:
+  rotInterval: 1
+    
+  
+  output:
+    #outputter: file
+    #fileName: ./testing-file.txt
+    #maxBytes: 1024000
+    #backupFiles: 3
+
+    #outputter: stdout
+    #outputTemplate: stdout
+    #outputter: splunkhec
+    #outputTemplate: splunkhec
+    #hecEndpoints:
+    #  - token: 00000000-0000-0000-0000-000000000000
+    #    url: https://i-01b1909a8c1eb7c25.splunk.show:8088/services/collector
+
+    outputter: s2sout
+    outputTemplate: uf
+    endpoints:
+      - 54.92.192.35:9997
+
+mix:
+  - sample: ./bad/snow/itsi_ea_snow_incident.yaml
+  - sample: ./bad/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
+  - sample: ./bad/twitter/itsi_ea_tweets.yaml
+  - sample: ./good/twitter/itsi_ea_tweets.yaml
+  - sample: ./bad/external_alerts/itsi_ea_external_alerts_fake.yaml
+  #- sample: ./bad/external_alerts/itsi_ea_external_alerts_cw.yaml
+  #- sample: ./bad/external_alerts/itsi_ea_external_alerts_sw.yaml
+  #- sample: ./bad/external_alerts/itsi_ea_external_alerts_ssm.yaml
+  #- sample: ./bad/external_alerts/itsi_ea_external_alerts_nagios.yaml

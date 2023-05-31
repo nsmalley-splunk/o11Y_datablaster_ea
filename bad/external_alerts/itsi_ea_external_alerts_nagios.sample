@@ -1,0 +1,27 @@
+2023-05-24T14:33:44 noop - start - Nagios
+[2023-05-24T14:35:06] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:35:41] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:36:16] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:36:51] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:36:52] SERVICE ALERT: web-4;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:37:19] SERVICE ALERT: web-2;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:37:26] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:37:27] SERVICE ALERT: web-4;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:37:29] SERVICE ALERT: web-3;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:37:54] SERVICE ALERT: web-2;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:01] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:02] SERVICE ALERT: web-4;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:03] SERVICE ALERT: web-3;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:29] SERVICE ALERT: web-2;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:36] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:37] SERVICE ALERT: web-4;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:38:38] SERVICE ALERT: web-3;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:39:04] SERVICE ALERT: web-2;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:39:11] SERVICE ALERT: web-1;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:39:12] SERVICE ALERT: web-4;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:39:13] SERVICE ALERT: web-3;IIS Web Publishing Service Status;CRITICAL;HARD;5;CRITICAL: W3SVC is stopped (should be running)
+[2023-05-24T14:39:39] SERVICE ALERT: web-1;IIS Web Publishing Service Status;OK;HARD;1;OK: W3SVC is running
+[2023-05-24T14:39:40] SERVICE ALERT: web-4;IIS Web Publishing Service Status;OK;HARD;1;OK: W3SVC is running
+[2023-05-24T14:39:41] SERVICE ALERT: web-2;IIS Web Publishing Service Status;OK;HARD;1;OK: W3SVC is running
+[2023-05-24T14:39:42] SERVICE ALERT: web-3;IIS Web Publishing Service Status;OK;HARD;1;OK: W3SVC is running
+2023-05-24T16:03:13 noop - end - Nagios

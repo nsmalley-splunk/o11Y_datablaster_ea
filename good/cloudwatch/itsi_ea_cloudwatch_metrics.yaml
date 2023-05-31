@@ -1,0 +1,22 @@
+samples:
+  - name: itsi_ea_cloudwatch_metrics
+    count: 1
+    interval: 60
+    tokens:
+    - name: timestamp
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+T\d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%dT%H:%M:%S"
+    - name: TRAFFICLOAD
+      format: template
+      type: random
+      replacement: int
+      lower: 5
+      upper: 30
+    lines:
+    - _raw: '{"Average": 1.0, "Maximum": 1.0, "Minimum": 1.0, "SampleCount": $TRAFFICLOAD$, "Sum": $TRAFFICLOAD$, "Unit": "Count", "account_id": "025293322704", "metric_dimensions": "LoadBalancerName=[splunkworkshop]", "metric_name": "RequestCount", "period": 60, "timestamp": "2023-05-18T12:00:00Z"}'
+      index: aws
+      host: lb.buttercup.retail
+      source: us-east-2:AWS/ELB
+      sourcetype: aws:cloudwatch

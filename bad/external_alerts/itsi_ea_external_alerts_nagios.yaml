@@ -1,0 +1,20 @@
+samples:
+  - name: itsi_ea_external_alerts_nagios
+    fromRaw: itsi_ea_external_alerts_nagios.sample
+    generator: replay
+    tokens:
+    #- name: tsnagios
+    #  type: epochtimestamp
+    #  format: regex
+    #  token: (\d{10})
+    - name: tscloudwatch
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+T\d{2}:\d{2}:\d{2})
+      replacement: "%s"
+    lines:
+    - _raw: ''
+      index: main
+      host: nagios.buttercup.com
+      source: /usr/local/nagios/var/nagios.log
+      sourcetype: nagios:core

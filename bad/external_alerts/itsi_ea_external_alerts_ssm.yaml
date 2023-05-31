@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_external_alerts_ssm
+    fromRaw: itsi_ea_external_alerts_ssm.sample
+    generator: replay
+    tokens:
+    - name: tsolly
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+T\d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%dT%H:%M:%S"
+    lines:
+    - _raw: ''
+      index: main
+      host: splunk.buttercup.com
+      source: http:splunk_observability_cloud_detector_alerts
+      sourcetype: splunk:o11y:detector:alert

@@ -1,0 +1,34 @@
+samples:
+  - name: itsi_ea_snow_incident
+    fromRaw: itsi_ea_snow_incident_noise.sample
+    count: 1
+    interval: 190
+    randomizeEvents: true
+    tokens:
+    - name: timestamp
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+ \d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%d %H:%M:%S"
+    - name: INCIDENT_NUM
+      format: regex
+      token: (INC\d{7})
+      type: fieldChoice
+      srcField: INC
+      sample: snow_incident_numbers.sample
+    - name: FOO_SHORT_DESC
+      format: template
+      type: fieldChoice
+      srcField: short_desc
+      sample: snow_incident_descriptions.sample
+    - name: FOO_LONG_DESC
+      format: template
+      type: fieldChoice
+      srcField: long_desc
+      sample: snow_incident_descriptions.sample
+    lines:
+    - _raw: ''
+      index: snow
+      host: https://ven03132.service-now.com/
+      source: https://ven03132.service-now.com/
+      sourcetype: snow:incident

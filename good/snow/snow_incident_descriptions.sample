@@ -1,0 +1,16 @@
+short_desc,long_desc
+Loading error,Customer reported difficulty adding items to the shopping cart due to a loading error. Advised to clear browser cache and try again.
+Payment processing,Caller encountered a payment processing error while completing the checkout. Suggested trying an alternative payment method or contacting their bank.
+Incorrect address,Issue with incorrect shipping address input during checkout. Assisted in updating the address and verified successful order placement.
+Slow website,Customer experienced slow website performance and delayed page loading. Recommended checking internet connection and refreshing the browser.
+Login issues,Caller unable to log into their account. Assisted in resetting the password and provided guidance on account recovery steps.
+Missing item,Reported missing product from the delivered package. Initiated a replacement order and provided instructions for returning the incorrect package.
+Order tracking,Customer expressed frustration with order tracking feature not displaying accurate information. Escalated the issue to the technical team for investigation.
+Coupon code,Caller encountered a coupon code not being applied during checkout. Verified the code validity and manually adjusted the final amount.
+Out of stock,Issue with an item appearing out of stock on the website despite being listed as available. Notified the inventory team for correction.
+Damaged item,Customer complained about receiving a damaged item. Initiated a return process and scheduled a replacement shipment.
+Website navigation,Caller reported difficulty navigating through different sections of the website. Provided step-by-step instructions and guided them to the desired page.
+Order total,Issue with a discrepancy in the order total displayed during checkout. Investigated the problem and corrected the pricing information.
+Product review error,Customer experienced an error while trying to submit a product review. Noted the feedback and informed the technical team to resolve the issue.
+Expired discount,Caller encountered an expired discount code. Offered an alternative discount and provided instructions on how to apply it.
+Order discrepancy,Reported a discrepancy in the received order. Resolved the issue by processing a refund for the missing item.

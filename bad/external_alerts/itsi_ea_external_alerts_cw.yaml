@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_external_alerts_cw
+    fromRaw: itsi_ea_external_alerts_cw.sample
+    generator: replay
+    tokens:
+    - name: tscloudwatch
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+T\d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%dT%H:%M:%S"
+    lines:
+    - _raw: ''
+      index: main
+      host: aws_cloudwatch_alerts
+      source: lambda
+      sourcetype: aws:cloudwatch:alert

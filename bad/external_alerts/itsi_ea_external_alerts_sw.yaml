@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_external_alerts_sw
+    fromRaw: itsi_ea_external_alerts_sw.sample
+    generator: replay
+    tokens:
+    - name: tssolarwinds
+      format: regex
+      type: timestamp
+      token: (\d+/\d+/\d{2} \d{2}:\d{2}:\d{2})
+      replacement: "%m/%d/%y %H:%M:%S"
+    lines:
+    - _raw: ''
+      index: main
+      host: solarwinds.buttercup.com
+      source: solarwinds:alert
+      sourcetype: solarwinds:alert

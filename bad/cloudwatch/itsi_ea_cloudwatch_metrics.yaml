@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_cloudwatch_metrics.yaml
+    fromRaw: itsi_ea_cloudwatch_metrics_problem.sample
+    generator: replay
+    tokens:
+    - name: timestamp
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+T\d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%dT%H:%M:%S"
+    lines:
+    - _raw: ''
+      index: aws
+      host: lb.buttercup.retail
+      source: us-east-2:AWS/ELB
+      sourcetype: aws:cloudwatch

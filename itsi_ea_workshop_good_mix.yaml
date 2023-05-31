@@ -1,0 +1,16 @@
+global:
+  rotInterval: 1
+  #output:
+  #  outputter: stdout
+  #  outputTemplate: stdout
+  
+  output:
+    outputter: splunkhec
+    outputTemplate: splunkhec
+    hecEndpoints:
+      - token: 00000000-0000-0000-0000-000000000000
+        url: https://54.92.192.35:8088/services/collector
+mix:
+  - sample: ./good/snow/itsi_ea_snow_incident.yaml
+  - sample: ./good/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
+  - sample: ./good/twitter/itsi_ea_tweets.yaml

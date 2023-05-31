@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_external_alerts_fake
+    fromRaw: itsi_ea_external_alerts_fake.sample
+    generator: replay
+    tokens:
+    - name: tsolly
+      format: regex
+      type: timestamp
+      token: (\d+/\d+/\d{4} \d{2}:\d{2}:\d{2})
+      replacement: "%m/%d/%Y %H:%M:%S"
+    lines:
+    - _raw: ''
+      index: main
+      host: buttercup_external_alerts
+      source: buttercup_external_alerts
+      sourcetype: buttercup:external:alert

@@ -1,0 +1,16 @@
+samples:
+  - name: itsi_ea_tweets
+    fromRaw: itsi_ea_tweets_problem.sample
+    generator: replay
+    tokens:
+    - name: timestamp
+      format: regex
+      type: timestamp
+      token: (\d{4}-\d+-\d+ \d{2}:\d{2}:\d{2})
+      replacement: "%Y-%m-%d %H:%M:%S"
+    lines:
+    - _raw: ''
+      index: main
+      host: twitter_sentiment_analysis
+      source: twitter_sentiment_analysis
+      sourcetype: twitter_sentiment_analysis
