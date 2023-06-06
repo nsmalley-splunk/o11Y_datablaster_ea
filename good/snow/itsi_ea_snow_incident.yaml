@@ -27,8 +27,8 @@ samples:
       srcField: long_desc
       sample: snow_incident_descriptions.sample
     lines:
-    - _raw: ''
       index: snow
       host: https://ven03132.service-now.com/
       source: https://ven03132.service-now.com/
       sourcetype: snow:incident
+         - _raw: 'te'
