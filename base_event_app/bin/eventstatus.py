@@ -1,7 +1,7 @@
 import sys
 import subprocess
-cmd_kill_1 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_good_mix.yaml\""
-cmd_kill_2 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_bad_mix.yaml\""
+cmd_kill_1 = "pkill -9 -f \"/home/centos/o11Y_datablaster_ea/eventgen-linux-amd64 generate /home/centos/o11Y_datablaster_ea/itsi_ea_workshop_good_mix.yaml\""
+cmd_kill_2 = "pkill -9 -f \"/home/centos/o11Y_datablaster_ea/eventgen-linux-amd64 generate /home/centos/o11Y_datablaster_ea/itsi_ea_workshop_bad_mix.yaml\""
 cmd_1 = "nohup /home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_bad_mix.yaml &"
 cmd_2 = "nohup /home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_good_mix.yaml &"
 
