@@ -11,6 +11,6 @@ global:
       - token: 00000000-0000-0000-0000-000000000000
         url: https://127.0.0.1:8088/services/collector
 mix:
-  - sample: ./good/snow/itsi_ea_snow_incident.yaml
-  - sample: ./good/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
-  - sample: ./good/twitter/itsi_ea_tweets.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/good/snow/itsi_ea_snow_incident.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/good/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/good/twitter/itsi_ea_tweets.yaml

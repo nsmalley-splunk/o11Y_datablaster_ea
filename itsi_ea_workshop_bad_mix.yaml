@@ -22,11 +22,11 @@ global:
       - 127.0.0.1:9997
 
 mix:
-  - sample: ./bad/snow/itsi_ea_snow_incident.yaml
-  - sample: ./bad/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
-  - sample: ./bad/twitter/itsi_ea_tweets.yaml
-  - sample: ./good/twitter/itsi_ea_tweets.yaml
-  - sample: ./bad/external_alerts/itsi_ea_external_alerts_fake.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/bad/snow/itsi_ea_snow_incident.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/bad/cloudwatch/itsi_ea_cloudwatch_metrics.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/bad/twitter/itsi_ea_tweets.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/good/twitter/itsi_ea_tweets.yaml
+  - sample: /home/centos/o11Y_datablaster_ea/bad/external_alerts/itsi_ea_external_alerts_fake.yaml
   #- sample: ./bad/external_alerts/itsi_ea_external_alerts_cw.yaml
   #- sample: ./bad/external_alerts/itsi_ea_external_alerts_sw.yaml
   #- sample: ./bad/external_alerts/itsi_ea_external_alerts_ssm.yaml
