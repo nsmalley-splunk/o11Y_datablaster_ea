@@ -14,12 +14,12 @@ global:
     #outputTemplate: splunkhec
     #hecEndpoints:
     #  - token: 00000000-0000-0000-0000-000000000000
-    #    url: https://i-01b1909a8c1eb7c25.splunk.show:8088/services/collector
+    #    url: https://127.0.0.1:8088/services/collector
 
     outputter: s2sout
     outputTemplate: uf
     endpoints:
-      - 54.92.192.35:9997
+      - 127.0.0.1:9997
 
 mix:
   - sample: ./bad/snow/itsi_ea_snow_incident.yaml

@@ -9,7 +9,7 @@ global:
     outputTemplate: splunkhec
     hecEndpoints:
       - token: 00000000-0000-0000-0000-000000000000
-        url: https://54.92.192.35:8088/services/collector
+        url: https://127.0.0.1:8088/services/collector
 mix:
   - sample: ./good/snow/itsi_ea_snow_incident.yaml
   - sample: ./good/cloudwatch/itsi_ea_cloudwatch_metrics.yaml

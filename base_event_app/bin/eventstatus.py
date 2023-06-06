@@ -1,9 +1,9 @@
 import sys
 import subprocess
-cmd_kill_1 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_datablaster/data-blaster-linux-metrics -c /home/ubuntu/o11y_base_core_datablaster/mix.yml\""
-cmd_kill_2 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_datablaster/data-blaster-linux-metrics -c /home/ubuntu/o11y_base_core_datablaster/mix_bad.yml\""
-cmd_1 = "nohup /home/ubuntu/o11y_base_core_datablaster/data-blaster-linux-metrics -c /home/ubuntu/o11y_base_core_datablaster/mix_bad.yml &"
-cmd_2 = "nohup /home/ubuntu/o11y_base_core_datablaster/data-blaster-linux-metrics -c /home/ubuntu/o11y_base_core_datablaster/mix.yml &"
+cmd_kill_1 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_good_mix.yaml\""
+cmd_kill_2 = "pkill -9 -f \"/home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_bad_mix.yaml\""
+cmd_1 = "nohup /home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_bad_mix.yaml &"
+cmd_2 = "nohup /home/ubuntu/o11y_base_core_ea/eventgen-linux-amd64 -c /home/ubuntu/o11y_base_core_ea/itsi_ea_workshop_good_mix.yaml &"
 
 def main(args):
     if len(args) != 1:
