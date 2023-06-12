@@ -42,8 +42,7 @@ class EventStatusCommand(GeneratingCommand):
         self.logger.debug("Changing status of Bad Events:", self.action)
         action = self.action
         if action==1:
-            subprocess.run(cmd_kill_1, shell=True, stdout=open('/dev/null', 'w'),
-                 stderr=open('errror.log', 'a'),)
+            subprocess.run(cmd_kill_1, shell=True)
             subprocess.run(cmd_kill_2, shell=True)
             subprocess.Popen(cmd_1, shell=True, stdout=open('/dev/null', 'w'),
                  stderr=open('error.log', 'a'), preexec_fn=os.setpgrp)
